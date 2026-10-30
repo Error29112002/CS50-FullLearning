@@ -1,0 +1,31 @@
+# --- Compiled C programs ---
+# `make hello` produces an extensionless binary called `hello`.
+# Ignore every extensionless file, then re-allow folders and files with an extension.
+*
+!*/
+!*.*
+!Makefile
+!LICENSE
+!.gitignore
+!.gitkeep
+
+a.out
+*.o
+*.out
+*.dSYM/
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- Flask / web ---
+flask_session/
+.env
+
+# --- Editors & OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
